@@ -26,11 +26,17 @@ body {
 
 
 
-@media (max-width: 1200px)  {
-  html,body {
+@media (max-width: $lg)  {
+  html, body {
     font-size: 16px
   }
 }
+
+// @media (max-width: 992px)  {
+//   html,body {
+//     font-size: 20px
+//   }
+// }
 
 // @media (min-width: 1240px) and (min-height: 600px) {
 //   html,body {
@@ -69,7 +75,14 @@ frame {
 
 .container {
   max-width: px-to-rem(1000);
+
+	@media (max-width: $lg) {
+		padding-right: px-to-rem(100);
+		padding-left: px-to-rem(100);
+	}
 }
+
+
 
 
 .header {
@@ -302,9 +315,6 @@ frame {
 
 
 
-
-
-
 	&__inf {
 		padding: px-to-rem(5) 0 0;
 
@@ -450,6 +460,8 @@ frame {
 	}
 
 
+
+
 	&__bottom {
 		margin: px-to-rem(-16) 0 0;
 		&-inner {
@@ -510,6 +522,90 @@ frame {
 			top: px-to-rem(22);
 			right: px-to-rem(-37);
 			width: px-to-rem(85);	
+
+			&-img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+
+
+	@media (max-width: $lg) {
+		&__cameras {
+			margin: 0 0 px-to-rem(45);
+			padding: px-to-rem(60) 0 0;
+
+			&-main {
+				margin: 0 0 px-to-rem(35);
+			}
+
+			&-links {
+				width: 100%;
+				min-height: auto;
+				margin: px-to-rem(0) auto 0;
+				padding: 0;
+				border: none;
+
+				&-box {
+					flex-basis: px-to-rem(340);
+				}
+
+				&-bottom {
+					padding: 0 px-to-rem(10);
+				}
+			}
+
+			&-link-1 {
+				width: 100%;
+				margin: 0 0 px-to-rem(10);
+				padding: px-to-rem(16) px-to-rem(10);
+				font-size: px-to-rem(22);
+
+				
+				&::before,
+				&::after {
+					content: none;
+					display: none;
+				}
+			}
+
+			&-link-2 {
+				font-size: px-to-rem(16);
+			}
+
+			&-link-3 {
+				font-size: px-to-rem(16);
+			}
+
+		}
+
+
+		&__decoration-1 {
+			top: px-to-rem(440);
+			left: px-to-rem(-80);
+			width: px-to-rem(302);
+		}
+
+		&__decoration-2 {
+		
+			top: px-to-rem(38);
+			right: px-to-rem(-280);
+			width: px-to-rem(390);
+
+		}		
+
+
+		&__logo {
+			// width: px-to-rem(309);
+			margin-top: px-to-rem(440);
+			margin-left: px-to-rem(-4);
+
+			display: inline-block;
+			vertical-align: middle;
+			pointer-events: visible;
+
 
 			&-img {
 				width: 100%;
@@ -819,6 +915,14 @@ frame {
 		font-weight: 400;
 		color: $colorBlue;
 		outline: none;
+	}
+
+	@media (max-width: $lg) {
+		&__slider {
+			.slick-track {
+				left: px-to-rem(4);
+			}
+		}
 	}
 
 }

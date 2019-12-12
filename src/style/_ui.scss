@@ -1,3 +1,8 @@
+$lg: 1200px;
+$md: 992px;
+$sm: 768px;
+$xs: 576px;
+
 $ffBruss: 'Bruss', sans-serif;
 $ffIntroBlackCaps: 'Intro Black Caps', sans-serif;
 $ffIntroBoldAlt: 'Intro Bold Alt', sans-serif;
@@ -11,6 +16,8 @@ $colorBg2: #fbf2b3;
 
 $colorBlue: #253c97;
 $colorPink: #ee888c;
+
+
 
 @mixin retina-image($image, $width, $height) {
   @media (min--moz-device-pixel-ratio: 1.3),
