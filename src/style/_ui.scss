@@ -1,5 +1,16 @@
+$ffBruss: 'Bruss', sans-serif;
+$ffIntroBlackCaps: 'Intro Black Caps', sans-serif;
+$ffIntroBoldAlt: 'Intro Bold Alt', sans-serif;
+$ffIntro: 'Intro', sans-serif;
+
 $rem: 20;
 
+
+$colorBg1: #e2c8df;
+$colorBg2: #fbf2b3;
+
+$colorBlue: #253c97;
+$colorPink: #ee888c;
 
 @mixin retina-image($image, $width, $height) {
   @media (min--moz-device-pixel-ratio: 1.3),
@@ -133,3 +144,66 @@ $rem: 20;
 }
 
 
+
+
+.hide-xs {
+  @include media-breakpoint-down(xs) {
+    display: none !important;
+  }
+}
+.hide-sm {
+  @include media-breakpoint-down(sm) {
+    display: none !important;
+  }
+}
+.hide-md {
+  @include media-breakpoint-down(md) {
+    display: none !important;
+  }
+}
+.hide-lg {
+  @include media-breakpoint-down(lg) {
+    display: none !important;
+  }
+}
+.hide-xl {
+  @include media-breakpoint-down(xl) {
+    display: none !important;
+  }
+}
+
+.visible-xs {
+  display: none !important;
+
+  @include media-breakpoint-down(xs) {
+    display: block !important;
+  }
+}
+.visible-sm {
+  display: none !important;
+
+  @include media-breakpoint-down(sm) {
+    display: block !important;
+  }
+}
+.visible-md {
+  display: none !important;
+
+  @include media-breakpoint-down(md) {
+    display: block !important;
+  }
+}
+.visible-lg {
+  display: none !important;
+
+  @include media-breakpoint-down(lg) {
+    display: block !important;
+  }
+}
+.visible-xl {
+  display: none !important;
+
+  @include media-breakpoint-down(xl) {
+    display: block !important;
+  }
+}

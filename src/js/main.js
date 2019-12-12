@@ -1,5 +1,4 @@
 svg4everybody(); //for svg spite in ie
-objectFitImages();
 
 
 let $body,
@@ -16,7 +15,16 @@ let $body,
 
 
 $(document).ready(function () {
-    $body = $('body');
+  $body = $('body');
+
+  $('.sec-3__slides').slick({
+  	dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 6,
+	  // centerMode: true,
+	  // variableWidth: true
+  })
     
 });
 

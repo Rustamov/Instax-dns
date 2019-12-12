@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Bruss';
+    src: local('Bruss'),
+        url('../fonts/Bruss.woff2') format('woff2'),
+        url('../fonts/Bruss.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Black Caps';
+    src: local('Intro Black Caps'), local('Intro-Black-Caps'),
+        url('../fonts/Intro-Black-Caps.woff2') format('woff2'),
+        url('../fonts/Intro-Black-Caps.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Bold Alt';
+    src: local('Intro Bold Alt'), local('Intro-Bold-Alt'),
+        url('../fonts/Intro-Bold-Alt.woff2') format('woff2'),
+        url('../fonts/Intro-Bold-Alt.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: local('Intro Light'), local('Intro-Light'),
+        url('../fonts/Intro-Light.woff2') format('woff2'),
+        url('../fonts/Intro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
